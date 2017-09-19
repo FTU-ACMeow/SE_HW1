@@ -67,4 +67,19 @@ public class Graph {
 		}
 		return Dis;
 	}
+	public String[] RandomWalk (String u) {
+		ArrayList<String> Res = new ArrayList<String>();
+		HashSet<String> visit = new HashSet<String>();
+		Res.add(u);
+		while (Edge.containsKey(u)) {
+			Set<String> vset = Edge.get(u).keySet();
+			String v = (String)vset.toArray()[(int)(Math.random()*vset.size())];
+			if (visit.contains(u+" "+v))
+				break;
+			visit.add(u+" "+v);
+			Res.add(v);
+			u = v;
+		}
+		return Res.toArray(new String[Res.size()]);
+	}
 }

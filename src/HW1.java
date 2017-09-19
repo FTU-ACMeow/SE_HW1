@@ -17,5 +17,6 @@ public class HW1 {
 			System.out.println(key+" = "+res.get(key));
 		}
 		System.out.println(StringProcess.Merge(G.GetBridge("i","a")));
+		System.out.println(StringProcess.Merge(G.RandomWalk("i")));
 	}
 }
