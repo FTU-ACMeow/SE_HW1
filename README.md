@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # StringProcess Class
 ## Join with a single space:
 String StringProcess.Merge (String[] Data) 
@@ -10,6 +11,25 @@ String[] StringProcess.LoadFile (String FileName)
 
 # Graph class: (members)
 ## Edge: Edge.get(u).get(v) == (u,v)
+=======
+#StringProcess Class
+
+##Join with a single space:
+String StringProcess.Merge (String[] Data) 
+
+##Split String and format:
+String[] StringProcess.Split (String Data)
+
+##Format String:
+String StringProcess.Format (String Data)
+
+##Read from file and split and format:
+String[] StringProcess.LoadFile (String FileName)
+
+#Graph class: (members)
+
+##Edge: Edge.get(u).get(v) == <u,v>
+>>>>>>> 399e941e8a54fb4b5be5fcdc8737db2364c97a61
 HashMap<String, HashMap<String, Integer>> Edge
 ## Insert edge (u,v):
 void InsertEdge (String u, String v)
