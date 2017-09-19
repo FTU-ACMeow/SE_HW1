@@ -18,5 +18,9 @@ public class HW1 {
 		}
 		System.out.println(StringProcess.Merge(G.GetBridge("i","a")));
 		System.out.println(StringProcess.Merge(G.RandomWalk("i")));
+		String[][] sss = G.ShortestPath("a", "c");
+		System.out.println(sss.length);
+		for (int i = 0 ; i < sss.length ; i++)
+			System.out.println(":"+StringProcess.Merge(sss[i]));
 	}
 }
