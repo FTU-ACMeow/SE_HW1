@@ -1,14 +1,22 @@
 # SE_HW1
 
-String StringProcess.Merge (String[] Data) //Join with ' '
+#String Class:
 
-String[] StringProcess.Split (String Data) //Split and Format
+##Join with a single space:
+String StringProcess.Merge (String[] Data) 
 
-String StringProcess.Format (String Data) //Format
+##Split String and format:
+String[] StringProcess.Split (String Data)
 
-String[] StringProcess.LoadFile (String FileName) //Read and Split
+##Format String:
+String StringProcess.Format (String Data)
 
+##Read from file and split and format:
+String[] StringProcess.LoadFile (String FileName)
+
+#Graph class:
 Graph {
-    HashMap<String, HashMap<String, Integer>> Edge //Edge
+    ##Edge:
+    HashMap<String, HashMap<String, Integer>> Edge
     
 }
