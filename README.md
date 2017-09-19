@@ -23,3 +23,5 @@ String[] GetBridge (String u, String v)
 String[] FillWithBridge (String[] Text)
 ## Get shortest distance from u to each vectex:
 HashMap<String, Integer> Dijkstra (String u)
+## RandomWalk:
+String[] RandomWalk (String u)
