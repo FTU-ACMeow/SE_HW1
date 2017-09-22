@@ -19,7 +19,7 @@ public class StringProcess {
 		for (int i = 0 ; i < Data.length() ; i++) {
 			if (Character.isLowerCase(Data.charAt(i)))
 				tmp = tmp + Data.charAt(i);
-			else if ((Data.charAt(i) == ' ' || Data.charAt(i) == '\t' || Data.charAt(i) == '\n') && tmp != "") {
+			else if (tmp != "" && (Data.charAt(i) == ' ' || Data.charAt(i) == '\t' || Data.charAt(i) == '\n' || Data.charAt(i) == '.'  || Data.charAt(i) == ','  || Data.charAt(i) == '?'  || Data.charAt(i) == '!'  || Data.charAt(i) == ':'  || Data.charAt(i) == ';'  || Data.charAt(i) == '\'' || Data.charAt(i) == '\"' || Data.charAt(i) == '~'  || Data.charAt(i) == '('  || Data.charAt(i) == ')')) {
 				Res.add(tmp);
 				tmp = "";
 			}
