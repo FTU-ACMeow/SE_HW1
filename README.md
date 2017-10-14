@@ -1,4 +1,4 @@
-//Change3
+//Change2&3
 # StringProcess Class
 ## Join with a single space:
 String StringProcess.Merge (String[] Data) 
